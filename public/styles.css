@@ -1,0 +1,104 @@
+*{
+    background: #fff;
+}
+.navbar-brand{
+    position: relative;
+    left: 20px;
+}
+#navbarNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+.card{
+    flex: 0 0 calc(33.33% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
+}
+.card img{
+    width: 437.5px;
+    height: 250px;
+}
+.content{
+    margin-left: 30%;
+    position: relative;
+    background: blurred;
+    box-shadow: 0 5px 5px 5px;
+    border: 2px transparent darkgreen;
+    border-radius: 20px;
+    width: 40%;
+    height: 350px;
+    padding: 0 20px;
+    background-color: rgb(135, 135, 207);
+}
+hr{
+    width: 100%;
+    color: black;
+}
+span{
+    color: rgb(110, 110, 143);
+    border: none;
+    gap: 10px;
+}
+input{
+    border: 2px solid rgb(135, 135, 207);
+    width: 100%;
+    border-radius: 5px;
+    background-color: inherit;
+}
+input::placeholder{
+    color: #fff;
+}
+textarea{
+    background-color: inherit;
+    border: 2px solid rgb(135, 135, 207);
+}
+textarea::placeholder{
+    color: #fff;
+}
+form{
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 10px;
+}
+button{
+    position: absolute;
+    right: 50px;
+    padding: 5px 8px;
+    border: 2px solid rgb(135, 135, 207);
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(91, 91, 180);
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+header{
+    text-align: center;
+
+}
+.services{
+    text-align: center;
+}
+.lead{
+    padding-left: 10px;
+}
+.buttonBtn{
+    position: absolute;
+    left: 35px;
+    margin-bottom: 10px;
+    width: 7%;
+    padding: 5px 8px;
+    border: 2px solid rgb(135, 135, 207);
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(91, 91, 180);
+}
