@@ -2,23 +2,21 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs');
 
 app.set('views', 'views');
 
-
 const checkWorkingHours = (req, res, next) => {
     const currentDate = new Date();
     const dayOfWeek = currentDate.getDay(); 
     const hourOfDay = currentDate.getHours();
 
-    if (dayOfWeek >= 1 && dayOfWeek <= 5 && hourOfDay >= 9 && hourOfDay < 23) {
+    if (dayOfWeek >= 1 && dayOfWeek <= 5 && hourOfDay >= 9 && hourOfDay < 17) {
         next(); 
     } else {
-        res.send('Sorry, our website is only available during working hours (Monday to Friday, from 8 to 9:59 ).');
+        res.send('Sorry, our website is only available during working hours (Monday to Friday, from 9am to 5pm ).');
     }
 };
 
